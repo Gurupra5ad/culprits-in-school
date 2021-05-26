@@ -1,8 +1,23 @@
 body{
     background-color:burlywood;
+    font-family: 'Mate SC', serif;
 }
-
-.container{
-    display : flex;
+.navbar{
+    font-size:1.5rem;
+    margin:10px;
+    border-radius:25px;
 }
-
+.navbar-brand{
+    font-size:2rem;
+    padding:5px;
+    font-family:'Bebas Neue', cursive;
+    color:#2e251b;
+    margin-left:10px;
+    margin-top:5px;
+}
+.complaints-link{
+    margin-right:5px;
+    padding:5px;
+    font-size:2rem;
+    color:white;
+}
