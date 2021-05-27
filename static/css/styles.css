@@ -1,7 +1,6 @@
 body{
     background-color:#9dacba
     font-family: 'Libre Baskerville', serif;
-    background-image:url(background.png);
     overflow-x: hidden;
 }
 /* #9dacba blue willow */
@@ -69,3 +68,15 @@ body{
 .main-card-scroll-class{
     margin-bottom:10px;
 }
+
+@media screen and (max-width:1100px) {
+    body {
+      background-color:#9dacba;
+    }
+  }
+
+@media screen and (min-width:1100px) {
+    body {
+        background-image:url(background.png);
+    }
+  }
