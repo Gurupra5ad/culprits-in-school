@@ -6,35 +6,35 @@
         <div class="card">
             <div class="card-header card-main-font">Register your complaints here</div>
             <div class="card-body">
-                <form>
+                <form id="comp_form" name="comp_form" method="post">
                     <div class="form-group">
                         <lable for="culprit">Culprit Name </label>
-                            <input type="text" class="form-control" id="culprit" placeholder="Name of the Harasser"
+                            <input type="text" class="form-control" name="name" id="culprit" placeholder="Name of the Harasser"
                                 required>
                     </div>
                     <div class="form-group">
                         <lable for="institution-name"> Is it school or a College ?</label>
-                            <input type="text" class="form-control" placeholder="School"
+                            <input type="text" class="form-control" name="insti" placeholder="School"
                                 required>
                     </div>
                     <div class="form-group">
                         <lable for="institution-name"> Name of the Institution </label>
-                            <input type="text" class="form-control" id="institution-name"
+                            <input type="text" class="form-control" name="insti_name" id="institution-name"
                                 placeholder="abc international school" required>
                     </div>
                     <div class="form-group">
                         <lable for="institution-name"> Are you a Student, Faculty or a Alumni ?</label>
-                            <input type="text" class="form-control" placeholder="Student"
+                            <input type="text" class="form-control" name="desig" placeholder="Student"
                                 required>
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Describe the Case</label>
-                        <textarea class="form-control ins-evi" id="exampleFormControlTextarea1" rows="3"
+                        <textarea class="form-control ins-evi" name="descp" id="exampleFormControlTextarea1" rows="3"
                             placeholder="It can be your direct or indirect experience" required></textarea>
                     </div>
                     <div class="form-group">
                         <lable for="evidence-link"> Evidences </label>
-                            <input type="text" class="form-control" id="institution-name"
+                            <input type="text" class="form-control" name = "evidence" id="institution-name"
                                 placeholder="Share a drive link with all the evidences you have">
                     </div>
                     <div class="form-check form-check-inline">

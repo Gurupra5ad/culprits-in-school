@@ -1,5 +1,5 @@
 body{
-    background-color:burlywood;
+    background-color:#9dacba
     font-family: 'Mate SC', serif;
     background-image:url(background.png)
 }
@@ -23,6 +23,7 @@ body{
     padding:3px;
     font-size:2rem;
     color:white;
+    font-family: 'Mate SC', serif;
 }
 .card{
     margin:5px 15px;
@@ -45,4 +46,10 @@ body{
     width:80px;
     font-size:1.45rem;
 }
-
+.success{
+    font-family:"Mate SC", serif;
+    text-align:center;
+}
+.success-card{
+    width:60%;
+}
