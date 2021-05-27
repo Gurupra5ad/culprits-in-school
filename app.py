@@ -27,6 +27,7 @@ class Complaints(db.Document):
             "insti":self.insti,
             "insti_name":self.insti_name,
             "desig":self.desig,
+            "descp":self.descp,
             "evidence":self.evidence
         }
 
@@ -41,9 +42,10 @@ def index():
         insti = request.form['insti']
         insti_name = request.form['insti_name']
         desig = request.form['desig']
+        descp = request.form['descp']
         evidence = request.form['evidence']
         
-        complaint = Complaints(name=name, insti=insti, desig =desig, insti_name = insti_name, evidence = evidence )
+        complaint = Complaints(name=name, insti=insti, desig =desig, descp=descp, insti_name = insti_name, evidence = evidence )
         complaint.save()
         
         return redirect('/success', code=302)
@@ -56,7 +58,11 @@ def complaints():
     for complaint in Complaints.objects:
         complaints.append(complaint)
     
-    return render_template("complaint.html", complaints=complaints)
+    return render_template("complaint.html", complaints=complaints, n=len(complaints))
+
+@app.route("/about")
+def about():
+    return render_template("about.html")
 
 
 if __name__ == '__main__':

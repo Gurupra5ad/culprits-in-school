@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{%block content%}
+    <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="main-card-scroll-class">
+            {% for i in  range (n-1,-1,-1) %}
+                <div class="card complaint-card">
+                    <div class="card-header card-main-font">{{complaints[i].name}} - {{complaints[i].insti_name}}</div>
+                    <div class="card-body">
+                        <div>
+                            <h3>Institution : <span class="complaint-span"> {{complaints[i].insti}} </span></h3>
+                        </div>
+                        <div>
+                            <h3> Victim :<span class="complaint-span"> {{complaints[i].desig}}</span></h3>
+                            <p>{{complaints[i].descp}}</p>
+                        </div>
+                    <div>
+                        <button class="btn btn-danger" src="{{complaints[i].evidence}}">View Evidence</button>
+                    </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        </div>
+    </div>
+{%endblock content%}

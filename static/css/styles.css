@@ -1,14 +1,15 @@
 body{
     background-color:#9dacba
-    font-family: 'Mate SC', serif;
-    background-image:url(background.png)
+    font-family: 'Libre Baskerville', serif;
+    background-image:url(background.png);
+    overflow-x: hidden;
 }
 /* #9dacba blue willow */
 .navbar{
     font-size:1.5rem;
     margin:10px;
     border-radius:25px;
-    background-color:#041b2c;
+    background-color:rgba(4,27,44,0.75);
 }
 .navbar-brand{
     font-size:2rem;
@@ -25,10 +26,11 @@ body{
     color:white;
     font-family: 'Mate SC', serif;
 }
+/* #45586f */
 .card{
     margin:5px 15px;
     border-radius:25px;
-    background-color:#45586f;
+    background-color:rgba(4,27,44,0.75);
     color:white;
     font-size:1.5rem;
     font-family:'Bebas Neue', cursive;
@@ -52,4 +54,18 @@ body{
 }
 .success-card{
     width:60%;
+}
+.complaint-card{
+    margin:5px 15px;
+    border-radius:25px;
+    background-color:rgba(4,27,44,0.75);
+    color:white;
+    font-size:1.5rem;
+    font-family:'Mate SC', serif;
+}
+.complaint-span{
+    color:yellow;
+}
+.main-card-scroll-class{
+    margin-bottom:10px;
 }
